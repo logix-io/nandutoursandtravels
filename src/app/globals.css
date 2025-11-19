@@ -19,8 +19,75 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Component Styling */
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading {
+  margin: 20px 0;
+  color: hsl(0, 0%, 59%);
+}
+
+/* Footer Component Styling */
+
+.footer {
+  text-align: center;
+  margin-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-container {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright-text {
+  margin-top: 30px;
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1024px) {
+  .app {
+    max-width: 600px;
+    padding: 0;
+  }
+
+  .heading {
+    font-size: 2.4rem;
+  }
 }
